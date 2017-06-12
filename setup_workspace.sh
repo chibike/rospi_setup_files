@@ -1,6 +1,4 @@
-PKGNAME="test_package"
-EMAIL="co607@live.mdx.ac.uk"
-VERSION="0.0.0"
+ros
 
 cd ~/ros_catkin_ws/src/
 catkin_create_pkg $PKGNAME std_msgs rospy roscpp
@@ -26,7 +24,7 @@ wget https://raw.githubusercontent.com/chibike/rospi_setup_files/master/UInt16Ar
 wget https://raw.githubusercontent.com/chibike/rospi_setup_files/master/UInt8Array.msg
 
 roscd $PKGNAME
-echo "<?xml version="1.0"?>" > package.xml
+echo "<?xml version=\"1.0\"?>" > package.xml
 echo "<package>" >> package.xml
 echo "  <name>$PKGNAME</name>" >> package.xml
 echo "  <version>$VERSION</version>" >> package.xml

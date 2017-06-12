@@ -1,7 +1,7 @@
 #!/bin/bash
 
 #Raspi
-PKGNAME="TestPackage"
+PKGNAME="test_package"
 EMAIL="co607@live.mdx.ac.uk"
 VERSION=0.0.0
 

@@ -1,4 +1,4 @@
-ros
+#ros
 
 cd ~/ros_catkin_ws/src/
 catkin_create_pkg $PKGNAME std_msgs rospy roscpp

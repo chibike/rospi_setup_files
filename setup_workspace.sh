@@ -5,9 +5,9 @@ PKGNAME="TestPackage"
 EMAIL="co607@live.mdx.ac.uk"
 VERSION=0.0.0
 
-cd ~/ros_catkin_ws/src
+cd ~/ros_catkin_ws/src/
 catkin_create_pkg $PKGNAME std_msgs rospy roscpp
-cd ~/ros_catkin_ws
+cd ~/ros_catkin_ws/
 sudo catkin_make -j2
 . ~/ros_catkin_ws/devel/setup.bash
 source /opt/ros/kinetic/setup.bash
@@ -46,9 +46,9 @@ echo "</package>" >> package.xml
 
 #Computer
 
-#cd ~/catkin_ws/src
+#cd ~/catkin_ws/src/
 #catkin_create_pkg $PKGNAME std_msgs rospy roscpp
-#cd ~/catkin_ws
+#cd ~/catkin_ws/
 #sudo catkin_make
 #. ~/catkin_ws/devel/setup.bash
 #source /opt/ros/kinetic/setup.bash

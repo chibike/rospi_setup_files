@@ -45,3 +45,6 @@ echo "  </export>" >> package.xml
 echo "</package>" >> package.xml
 
 mkdir scripts
+cd scripts
+wget https://raw.githubusercontent.com/chibike/rospi_setup_files/master/publish_video_data.py
+chmod +x publish_video_data.py

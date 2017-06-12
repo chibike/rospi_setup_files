@@ -3,16 +3,18 @@
 #Raspi
 PKGNAME="test_package"
 EMAIL="co607@live.mdx.ac.uk"
-VERSION=0.0.0
+VERSION="0.0.0"
 
+source ~/ros_catkin_ws/devel/setup.bash
 cd ~/ros_catkin_ws/src/
 catkin_create_pkg $PKGNAME std_msgs rospy roscpp
 cd ~/ros_catkin_ws/
 sudo catkin_make -j2
-. ~/ros_catkin_ws/devel/setup.bash
 source /opt/ros/kinetic/setup.bash
 
 roscd $PKGNAME
+P=pwd
+echo "Making dir in $P"
 mkdir msg
 cd msg
 wget https://raw.githubusercontent.com/chibike/rospi_setup_files/master/ColorImageData.msg

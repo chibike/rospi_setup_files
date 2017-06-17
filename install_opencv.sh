@@ -33,16 +33,13 @@ echo "source /usr/local/bin/virtualenvwrapper.sh" >> ~/.bashrc
 source ~/.bashrc
 
 mkvirtualenv cv -p python2
-mkvirtualenv cv -p python3
 workon cv
 
-d ~/opencv-3.1.0/
-$ mkdir build
-$ cd build
-d ~/opencv-3.1.0/
-$ mkdir build
-$ cd build
-$ cmake -D CMAKE_BUILD_TYPE=RELEASE \
+cd ~/opencv-3.1.0/
+mkdir build
+cd build
+
+cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D CMAKE_INSTALL_PREFIX=/usr/local \
     -D INSTALL_PYTHON_EXAMPLES=ON \
     -D INSTALL_C_EXAMPLES=OFF \

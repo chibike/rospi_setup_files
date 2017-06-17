@@ -46,7 +46,7 @@ cmake -D CMAKE_BUILD_TYPE=RELEASE \
     -D PYTHON_EXECUTABLE=~/.virtualenvs/cv/bin/python \
     -D BUILD_EXAMPLES=ON ..
 
-make -j4
+make -j2
 make clean
 make
 

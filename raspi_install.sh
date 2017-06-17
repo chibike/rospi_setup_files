@@ -12,16 +12,16 @@ sudo apt-get install libgtk2.0-dev
 sudo apt-get install libatlas-base-dev gfortran
 sudo apt-get install python2.7-dev python3-dev
 
+sudo wget https://bootstrap.pypa.io/get-pip.py
+sudo python get-pip.py
+sudo rm -rf ~/.cache/pip
+
 cd ~
 sudo wget -O opencv.zip https://github.com/Itseez/opencv/archive/3.1.0.zip
 sudo unzip opencv.zip
 
 sudo wget -O opencv_contrib.zip https://github.com/Itseez/opencv_contrib/archive/3.1.0.zip
 sudo unzip opencv_contrib.zip
-
-sudo wget https://bootstrap.pypa.io/get-pip.py
-sudo python get-pip.py
-sudo rm -rf ~/.cache/pip
 
 sudo pip install numpy
 cd ~/opencv-3.1.0/

@@ -33,6 +33,7 @@ sudo apt-get install python-matplotlib  ## 1 hour
 
 #ros
 echo -e "\n\n\n\n************** Installing Ros *******************"
+sudo wget https://raw.githubusercontent.com/chibike/rospi_setup_files/master/install_ros.sh
 sudo chmod +x install_ros.sh
 sudo ./install_ros.sh
 

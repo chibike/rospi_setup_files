@@ -94,7 +94,7 @@ sudo catkin_create_pkg $WORKSPACE_NAME std_msgs rospy roscpp
 cd ~/ros_catkin_ws
 sudo catkin_make -j2
 
-sudo . ~/catkin_ws/devel/setup.bash
+sudo . ~/ros_catkin_ws/devel/setup.bash
 
 mkdir build
 cd build
@@ -105,5 +105,5 @@ sudo make install
 sudo catkin_make -j2
 sudo catkin_make install
 
-cd ~/catkin_ws/
+cd ~/ros_catkin_ws/
 sudo catkin_make -j2

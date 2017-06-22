@@ -1,4 +1,4 @@
-#!bin/bash
+#!/bin/bash
 
 #opencv, pip, numpy
 echo -e "\n\n\n\n************** Installing OpenCV, PIP, Numpy *******************"

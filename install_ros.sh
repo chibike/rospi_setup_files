@@ -24,7 +24,7 @@ sudo wget http://sourceforge.net/projects/assimp/files/assimp-3.1/assimp-3.1.1_n
 sudo unzip assimp-3.1.1_no_test_models.zip
 cd assimp-3.1.1
 sudo cmake .
-sudo make
+sudo make -j2
 sudo make install
 
 cd ~/ros_catkin_ws
@@ -50,7 +50,7 @@ sudo . ~/ros_catkin_ws/devel/setup.bash
 mkdir build
 cd build
 sudo cmake ..
-sudo make
+sudo make -j2
 sudo make install
 
 sudo catkin_make -j2
